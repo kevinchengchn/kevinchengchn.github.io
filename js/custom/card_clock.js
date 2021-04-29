@@ -1,5 +1,5 @@
 var mykey = {
-  weather: '7a62a15c4bf9338650c8249c0b67771c' // 替换成从openweather获取的API 密钥
+  weather: '77538616ee2542755314becbfa94e738' // 替换成从openweather获取的API 密钥
 };
 var locationurl = 'https://extreme-ip-lookup.com/json/';
 var cityname = '';
@@ -30,7 +30,6 @@ function getweatherdata() {
   fetch(weatherurl)
     .then(data => data.json())
     .then(data => {
-      //console.log(data);
       clock.weatherimg = '/assets/weather/' + data.weather[0].icon + '.png';
       clock.temperature = data.main.temp + "*C";
       clock.humidity = data.main.humidity + "%";

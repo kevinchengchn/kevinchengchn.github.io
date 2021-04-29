@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/manifest.json</loc>
+    <loc>https://kevinchengchn.github.io/manifest.json</loc>
     
-    <lastmod>2021-04-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/categories/</loc>
-    
-    <lastmod>2021-04-28</lastmod>
+    <lastmod>2021-04-29</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/comments/</loc>
+    <loc>https://kevinchengchn.github.io/categories/</loc>
     
-    <lastmod>2021-04-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/link/</loc>
-    
-    <lastmod>2021-04-28</lastmod>
+    <lastmod>2021-04-29</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/tags/</loc>
+    <loc>https://kevinchengchn.github.io/comments/</loc>
     
-    <lastmod>2021-04-28</lastmod>
+    <lastmod>2021-04-29</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2021/02/24/Update-Diary/</loc>
+    <loc>https://kevinchengchn.github.io/link/</loc>
+    
+    <lastmod>2021-04-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kevinchengchn.github.io/tags/</loc>
+    
+    <lastmod>2021-04-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kevinchengchn.github.io/2021/02/24/Update-Diary/</loc>
     
     <lastmod>2021-02-24</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2020/11/14/Tag-Plugins-Plus/</loc>
+    <loc>https://kevinchengchn.github.io/2020/11/14/Tag-Plugins-Plus/</loc>
     
     <lastmod>2021-02-24</lastmod>
     
@@ -52,23 +52,23 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
-    <lastmod>2021-04-28</lastmod>
+    <loc>https://kevinchengchn.github.io/</loc>
+    <lastmod>2021-04-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://example.com/tags/%F0%9F%93%81Hexo/</loc>
-    <lastmod>2021-04-28</lastmod>
+    <loc>https://kevinchengchn.github.io/tags/%F0%9F%93%81Hexo/</loc>
+    <lastmod>2021-04-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/%F0%9F%A6%8BButterfly/</loc>
-    <lastmod>2021-04-28</lastmod>
+    <loc>https://kevinchengchn.github.io/tags/%F0%9F%A6%8BButterfly/</loc>
+    <lastmod>2021-04-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -76,8 +76,8 @@
 
   
   <url>
-    <loc>http://example.com/categories/%F0%9F%8D%A1Akilar%E3%81%AE%E7%B3%96%E8%91%AB%E8%8A%A6/</loc>
-    <lastmod>2021-04-28</lastmod>
+    <loc>https://kevinchengchn.github.io/categories/%F0%9F%8D%A1Akilar%E3%81%AE%E7%B3%96%E8%91%AB%E8%8A%A6/</loc>
+    <lastmod>2021-04-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
