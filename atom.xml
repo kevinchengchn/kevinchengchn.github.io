@@ -6,7 +6,7 @@
   <link href="https://kevinchengchn.github.io/atom.xml" rel="self"/>
   
   <link href="https://kevinchengchn.github.io/"/>
-  <updated>2021-02-24T17:29:23.000Z</updated>
+  <updated>2021-05-21T15:39:39.000Z</updated>
   <id>https://kevinchengchn.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>About NPM</title>
+    <link href="https://kevinchengchn.github.io/2021/05/21/About%20NPM/"/>
+    <id>https://kevinchengchn.github.io/2021/05/21/About%20NPM/</id>
+    <published>2021-05-21T15:39:39.000Z</published>
+    <updated>2021-05-21T15:39:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="About-NPM"><a href="#About-NPM" class="headerlink" title="About NPM"></a>About NPM</h2><h3 id="1-NPM命令"><a href="#1-NPM命令" class="headerlink" title="1.NPM命令"></a>1.NPM命令</h3><h4 id="全局安装命令"><a href="#全局安装命令" class="headerlink" title="全局安装命令"></a>全局安装命令</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm root -g<span class="comment">//查看全局安装目录</span></span><br><span class="line">npm list -g --dept <span class="number">0</span>    <span class="comment">//查看全局安装的包</span></span><br><span class="line">npm ls xxx -g<span class="comment">//查看全局安装的指定名称xxx的包</span></span><br></pre></td></tr></table></figure><h4 id="本地安装命令"><a href="#本地安装命令" class="headerlink" title="本地安装命令"></a>本地安装命令</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">npm list<span class="comment">//查看本地安装的包</span></span><br><span class="line">npm ls xxx<span class="comment">//查看本地安装的指定名称xxx的包</span></span><br><span class="line"></span><br><span class="line">npm install module_name -S </span><br><span class="line">npm install module_name --save <span class="comment">//写入dependencies</span></span><br><span class="line">npm install module_name -D </span><br><span class="line">npm install module_name --save-dev <span class="comment">// 写入devDependencies</span></span><br></pre></td></tr></table></figure><h5 id="dependencies与devDependencies的区别："><a href="#dependencies与devDependencies的区别：" class="headerlink" title="dependencies与devDependencies的区别："></a>dependencies与devDependencies的区别：</h5><blockquote><p>开发一个前端项目，在项目中你需要使用gulp构建你的开发和本地运行环境,这时你就要放到dependencies</p></blockquote><ul><li>devDependencies的插件只用于开发环境，不用于生产环境</li><li>dependencies是需要发布到生产环境的</li></ul><h2 id="Win10安装Node版本管理器nvm"><a href="#Win10安装Node版本管理器nvm" class="headerlink" title="Win10安装Node版本管理器nvm"></a>Win10安装Node版本管理器nvm</h2><blockquote><p>新旧项目依赖不同的Node包</p><p>同一台机器上安装多个版本的Node</p></blockquote><h3 id="0-安装前需要先将之前安装的Node版本完全删除"><a href="#0-安装前需要先将之前安装的Node版本完全删除" class="headerlink" title="0.安装前需要先将之前安装的Node版本完全删除"></a>0.安装前需要先将之前安装的Node版本完全删除</h3><ul><li><p>Windows设置 —&gt; 应用—&gt; 找到Node—&gt;点击卸载</p></li><li><p>重启电脑（或者从任务管理器中杀死所有Node相关的进程）</p></li><li><p>寻找以下文件夹并删除他们。根据您安装的版本，这些文件可能存在也可能不存在：</p><ul><li><p><code>C:\Program Files (x86)\Nodejs</code></p></li><li><p><code>C:\Program Files\Nodejs</code></p></li><li><p><code>C:\Users&#123;User&#125;\AppData\Roaming\npm（或%appdata%\npm）</code></p></li><li><p><code>C:\Users&#123;User&#125;\AppData\Roaming\npm-cache（或%appdata%\npm-cache）</code></p></li></ul></li><li><p>检查%PATH%环境变量，确保没有引用Nodejs和npm的存在</p></li><li>重启（重启大法解决90%问题）</li></ul><h3 id="1-安装nvm"><a href="#1-安装nvm" class="headerlink" title="1.安装nvm"></a>1.安装nvm</h3><p><strong><a href="https://github.com/coreybutler/nvm-windows/releases">nvm-window</a></strong></p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">nvm -v <span class="comment">// 查看nvm版本，判断是否安装成功</span></span><br><span class="line">nvm ls available <span class="comment">// 获取可获取的Node版本</span></span><br><span class="line">nvm install <span class="number">10.16</span><span class="number">.0</span> <span class="comment">// 安装指定版本的Node</span></span><br><span class="line">nvm use <span class="number">10.16</span><span class="number">.0</span> <span class="comment">// 使用指定版本Node</span></span><br><span class="line">nvm list <span class="comment">// 列出本地已安装的Node版本</span></span><br><span class="line">nvm uninstall <span class="number">10.16</span><span class="number">.0</span>  <span class="comment">// 卸载指定版本Node</span></span><br></pre></td></tr></table></figure><h3 id="2-使用nvm引发的问题"><a href="#2-使用nvm引发的问题" class="headerlink" title="2.使用nvm引发的问题"></a>2.使用nvm引发的问题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm config set prefix &quot;D:\nodejs\node_global&quot;</span><br><span class="line">npm config set cache &quot;D:\nodejs\node_cache&quot;</span><br><span class="line"></span><br><span class="line">D:\nodejs\node_global                       path</span><br><span class="line">D:\nodejs\node_global\node_modules          NODE_PATH</span><br><span class="line">D:\nodejs\nodejs\path</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">更新记录</summary>
+    
+    
+    
+    <category term="🍡Akilarの糖葫芦" scheme="https://kevinchengchn.github.io/categories/%F0%9F%8D%A1Akilar%E3%81%AE%E7%B3%96%E8%91%AB%E8%8A%A6/"/>
+    
+    
+    <category term="📁Hexo" scheme="https://kevinchengchn.github.io/tags/%F0%9F%93%81Hexo/"/>
+    
+    <category term="🦋Butterfly" scheme="https://kevinchengchn.github.io/tags/%F0%9F%A6%8BButterfly/"/>
+    
+  </entry>
   
   <entry>
     <title>Update Diary</title>
