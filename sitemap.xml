@@ -2,58 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://kevinchengchn.github.io/2021/06/10/Frontend%20Note/</loc>
-    
-    <lastmod>2021-06-10</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kevinchengchn.github.io/manifest.json</loc>
     
-    <lastmod>2021-06-10</lastmod>
+    <lastmod>2021-06-18</lastmod>
     
   </url>
   
   <url>
     <loc>https://kevinchengchn.github.io/bangumi/</loc>
     
-    <lastmod>2021-06-10</lastmod>
+    <lastmod>2021-06-18</lastmod>
     
   </url>
   
   <url>
     <loc>https://kevinchengchn.github.io/categories/</loc>
     
-    <lastmod>2021-06-10</lastmod>
+    <lastmod>2021-06-18</lastmod>
     
   </url>
   
   <url>
     <loc>https://kevinchengchn.github.io/comments/</loc>
     
-    <lastmod>2021-06-10</lastmod>
+    <lastmod>2021-06-18</lastmod>
     
   </url>
   
   <url>
     <loc>https://kevinchengchn.github.io/link/</loc>
     
-    <lastmod>2021-06-10</lastmod>
+    <lastmod>2021-06-18</lastmod>
     
   </url>
   
   <url>
     <loc>https://kevinchengchn.github.io/movies/</loc>
     
-    <lastmod>2021-06-10</lastmod>
+    <lastmod>2021-06-18</lastmod>
     
   </url>
   
   <url>
     <loc>https://kevinchengchn.github.io/tags/</loc>
     
-    <lastmod>2021-06-10</lastmod>
+    <lastmod>2021-06-18</lastmod>
     
   </url>
   
@@ -61,6 +54,13 @@
     <loc>https://kevinchengchn.github.io/2021/06/03/Git/</loc>
     
     <lastmod>2021-06-03</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kevinchengchn.github.io/2021/05/26/Frontend%20Note/</loc>
+    
+    <lastmod>2021-05-26</lastmod>
     
   </url>
   
@@ -95,22 +95,57 @@
 
   <url>
     <loc>https://kevinchengchn.github.io/</loc>
-    <lastmod>2021-06-10</lastmod>
+    <lastmod>2021-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://kevinchengchn.github.io/tags/NPM/</loc>
+    <lastmod>2021-06-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kevinchengchn.github.io/tags/Frontend/</loc>
+    <lastmod>2021-06-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kevinchengchn.github.io/tags/Note/</loc>
+    <lastmod>2021-06-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kevinchengchn.github.io/tags/Git/</loc>
+    <lastmod>2021-06-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://kevinchengchn.github.io/tags/%F0%9F%93%81Hexo/</loc>
-    <lastmod>2021-06-10</lastmod>
+    <lastmod>2021-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kevinchengchn.github.io/tags/%F0%9F%A6%8BButterfly/</loc>
-    <lastmod>2021-06-10</lastmod>
+    <lastmod>2021-06-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kevinchengchn.github.io/tags/Link/</loc>
+    <lastmod>2021-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -118,8 +153,29 @@
 
   
   <url>
+    <loc>https://kevinchengchn.github.io/categories/Work/</loc>
+    <lastmod>2021-06-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kevinchengchn.github.io/categories/Frontend/</loc>
+    <lastmod>2021-06-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://kevinchengchn.github.io/categories/%F0%9F%8D%A1Akilar%E3%81%AE%E7%B3%96%E8%91%AB%E8%8A%A6/</loc>
-    <lastmod>2021-06-10</lastmod>
+    <lastmod>2021-06-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kevinchengchn.github.io/categories/Tools/</loc>
+    <lastmod>2021-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
