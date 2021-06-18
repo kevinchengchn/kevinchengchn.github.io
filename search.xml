@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>京东自动评价脚本</title>
+      <link href="2021/06/18/%E4%BA%AC%E4%B8%9C%E8%87%AA%E5%8A%A8%E8%AF%84%E4%BB%B7%E8%84%9A%E6%9C%AC/"/>
+      <url>2021/06/18/%E4%BA%AC%E4%B8%9C%E8%87%AA%E5%8A%A8%E8%AF%84%E4%BB%B7%E8%84%9A%E6%9C%AC/</url>
+      
+        <content type="html"><![CDATA[<p>浏览器打开<a href="http://www.jd.com/">www.jd.com</a>登录账号，到评价页面随便点一个商品评价<br>按F12点击Console-&gt;复制下列代码-&gt;粘贴回车键坐等即可</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.body.innerHTML = &quot;&quot;;$(&quot;html&quot;).css(&quot;overflow&quot;,&quot;hidden&quot;);$(&quot;body&quot;).append(&#x27;<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;topTitle&quot;</span> <span class="attr">style</span>=<span class="string">&quot;padding:20px;display:block;font-size:48px;color:#FFFFFF;background-color:#e2231a;width:100%;text-align:center&quot;</span>&gt;</span>京东自动评价JS脚本 <span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;https://club.jd.com/myJdcomments/myJdcomment.action?sort=0&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width:99%;height:800px&quot;</span> <span class="attr">id</span>=<span class="string">&quot;JDifr&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span>&#x27;);$(&quot;#J-global-toolbar&quot;).remove();let isFiveStar = true;$(&quot;#topTitle&quot;).click(function()&#123;(isFiveStar = !isFiveStar) ? $(&quot;#topTitle&quot;).css(&quot;background-color&quot;,&quot;#e2231a&quot;):$(&quot;#topTitle&quot;).css(&quot;background-color&quot;,&quot;#8B0000&quot;);&#125;);let pendingNum = 1;let waitSubmitIds;let curId = 0;let maxCurId = 0;$(&quot;#JDifr&quot;).load(function()&#123;if($(&quot;#JDifr&quot;).attr(&quot;src&quot;).indexOf(&quot;sort&quot;) &gt; 0)&#123;pendingNum = ($(&quot;#JDifr&quot;).contents().find(&quot;a.text:first&quot;).siblings().length&gt;0 &amp;&amp; $(&quot;#JDifr&quot;).contents().find(&quot;a.text:first&quot;).attr(&quot;href&quot;)==&quot;?sort=0&quot;)?parseInt($(&quot;#JDifr&quot;).contents().find(&quot;a.text:first&quot;).next().text()):0;waitSubmitIds = $(&quot;#JDifr&quot;).contents().find(&quot;.number&quot;).length&gt;0?$(&quot;#JDifr&quot;).contents().find(&quot;.number&quot;).text().match(/\d&#123;10,12&#125;/g):0;maxCurId = waitSubmitIds?waitSubmitIds.length:0;curId = 0;if(pendingNum != 0 &amp;&amp; maxCurId &gt; 0 )&#123;gotoNextURL(&quot;order&quot;);&#125;else&#123;showInfo(&quot;订单全部评价完毕！！！&quot;);&#125;&#125;else if($(&quot;#JDifr&quot;).attr(&quot;src&quot;).indexOf(&quot;ruleid&quot;) &gt; 0 &amp;&amp; curId &lt; maxCurId)&#123;sumbitEvaluate();gotoNextURL(&quot;order&quot;);&#125;else if(curId == maxCurId)&#123;gotoNextURL(&quot;main&quot;);&#125;else&#123;showInfo(&quot;异常了！联系作者！&quot;);&#125;$(&quot;#JDifr&quot;).contents().find(&quot;html&quot;).css(&quot;overflow&quot;,&quot;hidden&quot;);&#125;);function showInfo(infoShow)&#123;$(&quot;#JDifr&quot;).contents().find(&quot;#nav&quot;).text(infoShow);$(&quot;#JDifr&quot;).contents().find(&quot;#nav&quot;).css(&#123;&quot;text-align&quot;:&quot;center&quot;,&quot;padding&quot;:&quot;30px&quot;,&quot;margin&quot;:&quot;1px&quot;,&quot;font-size&quot;:&quot;50px&quot;,&quot;color&quot;:&quot;#FFFFFF&quot;,&quot;width&quot;:&quot;100%&quot;&#125;);&#125;function gotoNextURL(nextURL)&#123;trueNextURL = (nextURL==&quot;main&quot;)?(&quot;https://club.jd.com/myJdcomments/myJdcomment.action?sort=0&quot;):(&quot;https://club.jd.com/myJdcomments/orderVoucher.action?ruleid=&quot;+waitSubmitIds[curId]);window.setTimeout(function()&#123;$(&quot;#JDifr&quot;).attr(&quot;src&quot;, trueNextURL);&#125;,500);&#125;function sumbitEvaluate()&#123;if ($(&quot;#JDifr&quot;).attr(&quot;src&quot;).indexOf(&quot;club.jd.com&quot;) &gt; 0)&#123;let tempInter,contentArr = [&#x27;商品质量很好，很满意，配送速度快啊，而且配送员态度也非常好。&#x27;,&#x27;挺好的，非常实用。京东的物流很快哟~希望以后会更快╭(╯3╰)╮&#x27;,&#x27;多快好省，京东给力，下次还是要选择京东商城，没错，非常满意&#x27;,&#x27;非常好，一起买的，价格便宜，快递又快，京东商城还是非常的专业和贴心!&#x27;,&#x27;活动期间买的很实惠，京东自营，值得信赖。&#x27;,&#x27;便宜好用，值得推荐买买买，同事都说好用。下次继续买买买，哈哈哈…&#x27;,&#x27;京东物流就是一个字快，昨晚10点多，11点前下的单今天早上就收到，包装得很好。&#x27;,&#x27;京东购物使我们的生活更便捷了！京东商品丰富，无所不有，自营商品更是价格优惠！&#x27;,&#x27;一直上京东商城网购，东西非常不错，价格便宜，物流快，是正品&#x27;,&#x27;质量很好，性价比高，值得购买，送货速度快！！&#x27;,&#x27;怒赞！（此评论虽仅有两个字，可谓言简意赅，一字千金，字字扣人心弦!&#x27;,&#x27;我为什么喜欢在京东买东西，因为今天买明天就可以送到。&#x27;,&#x27;非常感谢京东商城给予的优质的服务，从仓储管理、物流配送等各方面都是做的非常好的。&#x27;];tempInter = setInterval(function() &#123;window.clearInterval(tempInter);$(&quot;#JDifr&quot;).contents().find(&quot;.star5:visible&quot;).each(function()&#123;isFiveStar?$(this).click():(Math.random(0, 1) &gt; 0.5 ? $(this).click() : $(this).siblings(&#x27;.star4&#x27;).click());&#125;);isTag = $(&quot;#JDifr&quot;).contents().find(&quot;.m-tagbox a&quot;);if(isTag)&#123;$(&quot;#JDifr&quot;).contents().find(&quot;.m-tagbox a:first-child&quot;).addClass(&quot;tag-checked&quot;);&#125;let tLen = $(&quot;#JDifr&quot;).contents().find(&#x27;textarea:visible&#x27;).length;if (tLen)&#123;for (let ti = 0; ti &lt; tLen; ti++)&#123;$(&quot;#JDifr&quot;).contents().find(&#x27;textarea:visible&#x27;).eq(ti).text(contentArr[Math.floor(contentArr.length * Math.random())]);&#125;&#125;window.setTimeout(function()&#123;$(&quot;#JDifr&quot;).contents().find(&#x27;.btn-submit&#x27;)[0].click();curId++;&#125;,100);&#125;,50);&#125;&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Shopping </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 京东 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Git</title>
       <link href="2021/06/03/Git/"/>
       <url>2021/06/03/Git/</url>

@@ -2,28 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kevinchengchn.github.io/2021/06/18/%E4%BA%AC%E4%B8%9C%E8%87%AA%E5%8A%A8%E8%AF%84%E4%BB%B7%E8%84%9A%E6%9C%AC/</loc>
+    
+    <lastmod>2021-06-18</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kevinchengchn.github.io/manifest.json</loc>
-    
-    <lastmod>2021-06-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kevinchengchn.github.io/bangumi/</loc>
-    
-    <lastmod>2021-06-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kevinchengchn.github.io/categories/</loc>
-    
-    <lastmod>2021-06-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kevinchengchn.github.io/comments/</loc>
     
     <lastmod>2021-06-18</lastmod>
     
@@ -45,6 +31,27 @@
   
   <url>
     <loc>https://kevinchengchn.github.io/tags/</loc>
+    
+    <lastmod>2021-06-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kevinchengchn.github.io/bangumi/</loc>
+    
+    <lastmod>2021-06-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kevinchengchn.github.io/categories/</loc>
+    
+    <lastmod>2021-06-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kevinchengchn.github.io/comments/</loc>
     
     <lastmod>2021-06-18</lastmod>
     
@@ -144,6 +151,13 @@
   </url>
   
   <url>
+    <loc>https://kevinchengchn.github.io/tags/%E4%BA%AC%E4%B8%9C/</loc>
+    <lastmod>2021-06-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://kevinchengchn.github.io/tags/Link/</loc>
     <lastmod>2021-06-18</lastmod>
     <changefreq>daily</changefreq>
@@ -168,6 +182,13 @@
   
   <url>
     <loc>https://kevinchengchn.github.io/categories/%F0%9F%8D%A1Akilar%E3%81%AE%E7%B3%96%E8%91%AB%E8%8A%A6/</loc>
+    <lastmod>2021-06-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kevinchengchn.github.io/categories/Shopping/</loc>
     <lastmod>2021-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
